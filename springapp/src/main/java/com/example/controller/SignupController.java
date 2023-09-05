@@ -18,7 +18,7 @@ public class SignupController {
 	@Autowired
 	UserService userService;
 	
-	@PostMapping("/login1244")
+	@PostMapping("/signup")
 	public boolean saveUser(@RequestBody UserTempModel user) {
 		System.out.println(user);
 		return userService.saveUser(user).equals("success") ? true : false;
